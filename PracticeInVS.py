@@ -7,3 +7,13 @@ for i in items:
         print('Found Even Number: ', i)
 else:
     print('No Even Number Found')
+
+
+names = ['John', 'Jane', 'Doe']
+
+for name in names:
+    if name == 'Jane':
+        print('Found Jane')
+        break
+else:
+    print('Jane not found')
