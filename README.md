@@ -177,3 +177,17 @@ letters_copy.append('f') # Add 'f' to the copied list
 print('original list:', letters)
 print('copied list:', letters_copy)
 
+import copy
+
+
+matrix = [['a','b'],['c','d']]
+
+# matrix_copy = matrix.copy() # Create a shallow copy of the matrix
+# matrix_copy[0][1] = 'z' # Change the first element of the first row in the copied matrix
+
+
+matrix_copy = copy.deepcopy(matrix) # Create a deep copy of the matrix
+matrix_copy[1].remove('c') # Remove the second row from the copied matrix
+
+print('original matrix:', matrix)
+print('copied matrix:', matrix_copy)
